@@ -40,7 +40,7 @@ public class MealServlet extends HttpServlet {
 
         log.info(meal.isNew() ? "Create {}" : "Update {}", meal);
         repository.save(meal);
-        response.sendRedirect("mea ls");
+        response.sendRedirect("meals");
     }
 
     @Override
